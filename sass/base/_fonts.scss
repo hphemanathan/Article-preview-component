@@ -1,10 +1,14 @@
 :root {
   //Font Family
-  // --font-family:
+  --font-family: "Manrope", sans-serif;
 
-  // //Font size
-  // --font-s-body:
-  // --font-s-h1:
+  // Font size
+  --font-s-body: 13px;
+  --font-s-h1: clamp(
+    1rem,
+    0.9119718309859155rem + 0.3755868544600939vw,
+    1.25rem
+  );
 
   // --font-s-footer:
 }

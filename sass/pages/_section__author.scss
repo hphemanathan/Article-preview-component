@@ -1,0 +1,39 @@
+.section__author {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  gap: var(--16px);
+  margin-block-end: var(--20px);
+
+  &__img {
+    border-radius: 50%;
+    // flex: 1 1 40px;
+    width: 40px;
+  }
+
+  &__detail {
+    line-height: 1.5;
+    &--name {
+      font-weight: bold;
+      color: var(--color-primary);
+    }
+  }
+
+  &__share {
+    margin-left: auto;
+    background-color: var(--color-background);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    &--icon {
+      fill: var(--color-primary);
+
+      height: 13px;
+      width: 15px;
+    }
+  }
+}

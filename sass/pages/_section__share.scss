@@ -1,4 +1,13 @@
 .section__share {
   background-color: var(--color-primary);
-  display: none;
+  // display: none;
+  &--wrapper {
+    display: flex;
+    padding-block: var(--12px);
+  }
+
+  &--icons {
+    display: flex;
+    align-items: center;
+  }
 }

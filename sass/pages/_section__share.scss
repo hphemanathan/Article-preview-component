@@ -3,11 +3,36 @@
   // display: none;
   &--wrapper {
     display: flex;
+    gap: var(--20px);
     padding-block: var(--12px);
+    width: min(calc(100% - var(--spacing) * 6), 45.625rem);
+    margin-inline: auto;
+    align-items: center;
+    // justify-content: center;
   }
 
   &--icons {
     display: flex;
     align-items: center;
+    gap: var(--10px);
+
+    &-wrapper {
+      // background-color: var(--color-text);
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+    }
+
+    &-sh {
+      fill: green;
+      background-color: red;
+      padding: 18px;
+      height: 13px;
+      width: 15px;
+    }
   }
 }

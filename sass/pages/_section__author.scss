@@ -21,19 +21,24 @@
 
   &__share {
     margin-left: auto;
-    background-color: var(--color-background);
-    width: 32px;
-    height: 32px;
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    border-radius: 50%;
+    align-items: center;
+    &::before {
+      content: " ";
+      position: absolute;
+      display: block;
+      background-color: var(--color-background);
+      width: 32px;
+      height: 32px;
+      // z-index: -1;
+      border-radius: 50%;
+    }
     &--icon {
-      fill: var(--color-primary);
-
-      height: 13px;
-      width: 15px;
+      fill: var(--color-text);
+      height: 15px;
+      width: 13px;
+      font-weight: bold;
     }
   }
 }

@@ -19,6 +19,22 @@
     }
   }
 
+  &--icon {
+    margin-left: auto;
+    width: 15px;
+    height: 13px;
+    background-color: red;
+    padding-block: 18px;
+    padding-inline: 15px;
+    border-radius: 50%;
+  }
+
+  &--icon::before {
+    content: " ";
+    width: 32px;
+    height: 32px;
+  }
+
   &__share {
     margin-left: auto;
     display: flex;
@@ -35,9 +51,12 @@
       border-radius: 50%;
     }
     &--icon {
+<<<<<<< HEAD
       fill: var(--color-text);
       height: 15px;
       width: 13px;
+=======
+>>>>>>> main
     }
   }
 }

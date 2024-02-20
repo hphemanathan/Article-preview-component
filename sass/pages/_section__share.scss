@@ -5,9 +5,10 @@
   &--wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-block: var(--12px);
-    width: min(calc(100% - var(--spacing) * 6), 45.625rem);
+    // justify-content: space-between;
+    gap: 20px;
+    padding-block: var(--22px);
+    width: calc(100% - var(--64px));
     margin-inline: auto;
   }
 
@@ -15,17 +16,18 @@
     display: flex;
     align-items: center;
     gap: var(--16px);
-
-    // &-icon:last-of-type {
-    //   // margin-right: auto;
-    // }
   }
 
+  &--text {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
   &__share {
     // margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
     &::before {
       content: " ";
       position: absolute;

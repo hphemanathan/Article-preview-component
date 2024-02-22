@@ -2,6 +2,10 @@
   background-color: var(--color-primary);
   // display: none;
 
+  @include tab {
+    display: none;
+  }
+
   &--wrapper {
     display: flex;
     align-items: center;

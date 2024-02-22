@@ -3,7 +3,12 @@ body {
   font-size: var(--font-s-body);
   color: var(--color-text);
   display: flex;
+
   flex-direction: column;
   font-weight: 500;
   background-color: var(--color-background);
+
+  @include tab {
+    align-items: center;
+  }
 }

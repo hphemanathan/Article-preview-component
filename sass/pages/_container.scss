@@ -41,6 +41,7 @@
 
     @include tab {
       margin-block-start: var(--32px);
+      overflow-x: hidden;
     }
 
     // width: min(calc(100% - var(--spacing) * 6), 45.625rem);
@@ -55,11 +56,13 @@
 .hero-img {
   margin-block-end: var(--36px);
   border: 5px solid red;
+  // z-index: ;
 
   & img {
     @include tab {
       width: 100%;
       border: 5px solid green;
+      transform: scale(1.7);
     }
   }
 

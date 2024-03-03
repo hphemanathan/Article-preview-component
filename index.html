@@ -16,6 +16,27 @@
       <div class="hero-img">
         <img src="public/drawers.jpg" alt="Dressing table" />
       </div>
+
+      <picture class="section__hero__img">
+        <source
+          media="(min-width: 1000px )"
+          srcset="
+            /public/image-hero-desktop.webp    1x,
+            /public/image-hero-desktop@2x.webp 2x
+          " />
+
+        <source
+          media="(min-width: 600px)"
+          srcset="
+            /public/image-hero-tablet.webp    1x,
+            /public/image-hero-tablet@2x.webp 2x
+          " />
+
+        <img
+          src="/public/image-hero-mobile.webp"
+          alt="Woman sitting in front of laptop and drinking coffee"
+          srcset="/public/image-hero-mobile@2x.webp 2x" />
+      </picture>
       <div class="wrapper">
         <section class="container__wrapper">
           <h1 class="container__heading">

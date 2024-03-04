@@ -4,6 +4,7 @@
   // justify-content: center;
   gap: var(--16px);
   margin-block-end: var(--20px);
+  position: relative;
 
   @include tab {
     margin-block-end: 0;

@@ -1,6 +1,7 @@
 .section__share {
   background-color: var(--color-primary);
-  // display: none;
+  position: absolute;
+  top: 0;
 
   @include tab {
     display: none;

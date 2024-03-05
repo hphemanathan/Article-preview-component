@@ -1,7 +1,23 @@
+// Animations
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-64px);
+    opacity: 1;
+  }
+}
+
+//General
+
 .section__share {
   background-color: var(--color-primary);
-  position: absolute;
-  top: 0;
+  opacity: 1;
+  animation: slide-up 1000ms;
 
   @include tab {
     display: none;

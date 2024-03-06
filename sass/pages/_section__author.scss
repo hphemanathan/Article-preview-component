@@ -59,6 +59,10 @@
       fill: var(--color-text);
       height: 15px;
       width: 13px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

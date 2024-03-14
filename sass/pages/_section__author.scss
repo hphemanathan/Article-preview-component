@@ -1,9 +1,23 @@
+@keyframes vanish {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 .section__author {
   display: flex;
   align-items: center;
   // justify-content: center;
   gap: var(--16px);
   margin-block-end: var(--20px);
+
+  &.hide {
+    animation: vanish 1000ms;
+  }
 
   @include tab {
     margin-block-end: 0;

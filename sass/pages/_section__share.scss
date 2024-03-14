@@ -19,12 +19,12 @@
   opacity: 0;
 
   position: absolute;
-  border-radius: var(--border-radius);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
   width: min(calc(100% - var(--spacing) * 6), 45.625rem);
   will-change: transform;
 
   &.open {
-    animation: slide-up 1000ms both;
+    animation: slide-up ease-out 500ms both;
   }
   @include tab {
   }

@@ -27,6 +27,7 @@
     animation: slide-up ease-out 500ms both;
   }
   @include tab {
+    width: auto;
   }
 
   &--wrapper {
@@ -35,7 +36,7 @@
     // justify-content: space-between;
     gap: 20px;
     padding-block: var(--22px);
-    width: calc(100% - var(--64px));
+    // width: calc(100% - var(--64px));
     margin-inline: auto;
   }
 
@@ -55,6 +56,9 @@
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    @include tab {
+      display: none;
+    }
     &::before {
       content: " ";
       position: absolute;

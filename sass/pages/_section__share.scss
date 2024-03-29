@@ -12,11 +12,23 @@
   }
 }
 
+@keyframes slide-up-tab {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+}
+
 //General
 
 .section__share {
   background-color: var(--color-primary);
-  // opacity: 0;
+  opacity: 0;
 
   position: absolute;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
@@ -28,6 +40,14 @@
   }
   @include tab {
     width: auto;
+    border-radius: var(--border-radius);
+    top: 55%;
+    left: 75%;
+    z-index: 999;
+
+    &.open {
+      animation: slide-up-tab ease-out 500ms both;
+    }
   }
 
   &--wrapper {
@@ -40,6 +60,7 @@
     margin-inline: auto;
 
     @include tab {
+      padding-block: var(--18px);
       padding-inline: var(--36px);
     }
   }
@@ -80,18 +101,17 @@
     }
   }
 
-  &--triangle {
-    color: red;
-    font-size: 64px;
-  }
-
   &__triangle {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) rotate(180deg);
-    bottom: -35px;
-    color: var(--color-primary);
-    font-size: 50px;
+    display: none;
+    @include tab {
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) rotate(180deg);
+      bottom: -35px;
+      color: var(--color-primary);
+      font-size: 50px;
+    }
   }
 }
 

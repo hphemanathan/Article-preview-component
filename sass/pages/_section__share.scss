@@ -38,6 +38,10 @@
     padding-block: var(--22px);
     // width: calc(100% - var(--64px));
     margin-inline: auto;
+
+    @include tab {
+      padding-inline: var(--36px);
+    }
   }
 
   &--icons {
@@ -80,9 +84,18 @@
     color: red;
     font-size: 64px;
   }
+
+  &__triangle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    bottom: -35px;
+    color: var(--color-primary);
+    font-size: 50px;
+  }
 }
 
-.triangle {
-  color: green;
-  font-size: 50px;
-}
+// .triangle {
+//   color: green;
+//   font-size: 50px;
+// }

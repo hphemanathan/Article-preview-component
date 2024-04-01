@@ -41,9 +41,9 @@
   @include tab {
     width: auto;
     border-radius: var(--border-radius);
-    top: 55%;
-    left: 75%;
-    z-index: 999;
+    top: 0;
+    left: 0;
+    z-index: 2;
 
     &.open {
       animation: slide-up-tab ease-out 500ms both;

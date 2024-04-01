@@ -29,6 +29,7 @@
     margin-inline: auto;
     @include tab {
       width: calc(100% - var(--80px));
+      z-index: 1;
     }
   }
 

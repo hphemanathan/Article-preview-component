@@ -2,7 +2,7 @@
   --color-background: white;
   background-color: var(--color-background);
   border-radius: var(--border-radius);
-  overflow: hidden;
+  // overflow: hidden;
   //   width: min(90%, 20rem);
   width: min(calc(100% - var(--spacing) * 6), 45.625rem);
   margin-inline: auto;
@@ -11,11 +11,16 @@
   margin-top: var(--72);
 
   @include tab {
-    display: flex;
-    align-items: center;
     width: min(90%, 730px);
     margin-block: auto;
     position: relative;
+    // z-index: 1;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    width: min(calc(100% - var(--spacing) * 6), 45.625rem);
   }
 
   .wrapper {

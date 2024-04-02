@@ -10,5 +10,6 @@ body {
 
   @include tab {
     align-items: center;
+    position: relative;
   }
 }

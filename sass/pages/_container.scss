@@ -1,11 +1,11 @@
 .container {
   --color-background: white;
   background-color: var(--color-background);
-  border-radius: var(--border-radius);
-  // overflow: hidden;
+
   //   width: min(90%, 20rem);
   width: min(calc(100% - var(--spacing) * 6), 45.625rem);
   margin-inline: auto;
+  border-radius: var(--border-radius);
   //   border-radius: ;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin-top: var(--72);
@@ -18,9 +18,16 @@
   }
 
   &__section {
-    display: flex;
-    align-items: center;
-    width: min(calc(100% - var(--spacing) * 6), 45.625rem);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
+    // align-items: center;
+    // width: min(calc(100% - var(--spacing) * 6), 45.625rem);
+
+    @include tab {
+      display: flex;
+      align-items: center;
+    }
   }
 
   .wrapper {

@@ -29,7 +29,6 @@
 .section__share {
   background-color: var(--color-primary);
   opacity: 0;
-
   position: absolute;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   width: min(calc(100% - var(--spacing) * 6), 45.625rem);
@@ -39,6 +38,7 @@
     animation: slide-up ease-out 500ms both;
   }
   @include tab {
+    position: absolute;
     width: auto;
     border-radius: var(--border-radius);
     top: 58%;

@@ -31,7 +31,7 @@
   opacity: 0;
   position: absolute;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
-  width: min(calc(100% - var(--spacing) * 6), 45.625rem);
+  width: min(calc(100% - var(--spacing) * 6), 31rem);
   will-change: transform;
 
   &.open {

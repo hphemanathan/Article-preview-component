@@ -39,10 +39,10 @@
   }
   @include tab {
     position: absolute;
-    width: auto;
+    width: max-content;
     border-radius: var(--border-radius);
     top: 58%;
-    left: 80.5%;
+    left: 76.3%;
     // z-index: 2;
 
     &.open {

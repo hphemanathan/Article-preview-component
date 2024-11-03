@@ -15,7 +15,7 @@
 
 ### The challenge
 
-# Article preview component using HTML5, CSS3,
+# Article preview component using HTML5, SAAS & Flexbox
 
 
 ### Screenshot
